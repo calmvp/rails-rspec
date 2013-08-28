@@ -1,10 +1,12 @@
-require 'spec_helper'
+require '../spec_helper.rb'
 
 feature 'Admin panel' do
   context "on admin homepage" do
-    it "can see a list of recent posts"
+    it "can see a list of recent posts" do
+       visit admin_posts_url
+    end
 
-    it "can edit a post by clicking the edit link next to a post"
+    it "can edit a post by clicking the edit link next to a post" 
 
     it "can delete a post by clicking the delete link next to a post"
 
